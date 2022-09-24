@@ -32,5 +32,13 @@ button {
 }
 
 h1 {
-  font-family: "Inconsolata", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+a {
+  cursor: pointer;
+}
+
+Link {
+  cursor: pointer;
 }

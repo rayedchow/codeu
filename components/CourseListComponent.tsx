@@ -13,9 +13,9 @@ const CourseListComponent = (props: Props) => {
         <div className="flex space-x-5 items-center">
             <img src="/javaIcon.svg" />
             <div>
-                <h1 className="text-2xl font-title">{props.title}</h1>
+                <h1 className="text-2xl">{props.title}</h1>
                 <p>{props.description}</p>
-                <p>{props.completed} out of {props.exerciseCount} completed</p>
+                <p className="text-[#877EB4]">{props.completed} out of {props.exerciseCount} completed</p>
             </div>
         </div>
         <button className="flex justify-around items-center text-md">
