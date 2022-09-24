@@ -1,12 +1,12 @@
 [
 	{
-		"unit": "Unit 1 - Primitive Types",
+		"unit": "Unit 1: Primitive Types",
 		"type": 2,
 		"question": "Write a line that creates a variable named 'hello' and assign it the value 'world' in Java. Write the solution in the shortest way possible (with spaces).",
 		"answer": "String hello = \"world\";"
 	},
 	{
-		"unit": "Unit 1 - Primitive Types",
+		"unit": "Unit 1: Primitive Types",
 		"type": 1,
 		"question": "Which of these methods displays an input to the the computer monitor?",
 		"options": [
@@ -18,7 +18,7 @@
 		"answer": 2
 	},
 	{
-		"unit": "Unit 2 - Using Objects",
+		"unit": "Unit 2: Using Objects",
 		"type": 1,
 		"question": "Which of these are NOT a way to create the string 'test'?",
 		"options": [
@@ -30,7 +30,7 @@
 		"answer": 1
 	},
 	{
-		"unit": "Unit 2 - Using Objects",
+		"unit": "Unit 2: Using Objects",
 		"type": 1,
 		"question": "What are reference data types also known as?",
 		"options": [
@@ -42,7 +42,7 @@
 		"answer": 0
 	},
 	{
-		"unit": "Unit 3 - Boolean Expressions and If Statements",
+		"unit": "Unit 3: Boolean Expressions and If Statements",
 		"type": 1,
 		"question": "Which of these are NOT a relational operator?",
 		"options": [
@@ -54,14 +54,14 @@
 		"answer": 3
 	},
 	{
-		"unit": "Unit 3 - Boolean Expressions and If Statements",
+		"unit": "Unit 3: Boolean Expressions and If Statements",
 		"type": 3,
 		"question": "You are given a variable \"day\" that is an integer from 1-7 that represents what day of week it is, from Sunday (1) to Saturday (7). Print out \"true\" or \"false\" whether or not the day is Friday.",
 		"input": 6,
 		"answer": "true"
 	},
 	{
-		"unit": "Unit 4 - Iteration",
+		"unit": "Unit 4: Iteration",
 		"type": 1,
 		"question": "In loops, when does the statement inside the loop execute?",
 		"options": [
@@ -73,14 +73,14 @@
 		"answer": 3
 	},
 	{
-		"unit": "Unit 4 - Iteration",
+		"unit": "Unit 4: Iteration",
 		"type": 3,
 		"question": "You are given an array of strings, \"days\", that represents the days in the week. Loop this array and print every item in one line without any spaces (NOT ln).",
 		"input": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
 		"answer": "SundayMondayTuesdayWednesdayThursdayFridaySaturday"
 	},
 	{
-		"unit": "Unit 5 - Classes",
+		"unit": "Unit 5: Classes",
 		"type": 1,
 		"question": "What is the main method's header?",
 		"options": [
@@ -92,7 +92,7 @@
 		"answer": 2
 	},
 	{
-		"unit": "Unit 5 - Classes",
+		"unit": "Unit 5: Classes",
 		"type": 1,
 		"question": "What type of method is a print statement?",
 		"options": [
@@ -104,7 +104,7 @@
 		"answer": 1
 	},
 	{
-		"unit": "Unit 6 - Array",
+		"unit": "Unit 6: Array",
 		"type": 1,
 		"question": "What is a for-each loop used for?",
 		"options": [
@@ -116,13 +116,13 @@
 		"answer": 3
 	},
 	{
-		"unit": "Unit 6 - Array",
+		"unit": "Unit 6: Array",
 		"type": 2,
 		"question": "Declare a string array \"fruits\" with items \"mango\", \"pineapple\", and \"raspberry\". Write the solution in the shortest way possible (with spaces).",
 		"answer": "String[] fruits = {\"mango\", \"pineapple\", \"raspberry\"};"
 	},
 	{
-		"unit": "Unit 7 - ArrayList",
+		"unit": "Unit 7: ArrayList",
 		"type": 1,
 		"question": "What is an ArrayList?",
 		"options": [
@@ -134,13 +134,13 @@
 		"answer": 0
 	},
 	{
-		"unit": "Unit 7 - ArrayList",
+		"unit": "Unit 7: ArrayList",
 		"type": 2,
 		"question": "You are given a lisy called \"myData\". Write the expression that would return the size/length of the list, in the shortest way possible.",
 		"answer": "myData.size()"
 	},
 	{
-		"unit": "Unit 8 - 2D Array",
+		"unit": "Unit 8: 2D Array",
 		"type": 1,
 		"question": "How do you declare a 2D Array of integers?",
 		"options": [
@@ -152,7 +152,7 @@
 		"answer": 1
 	},
 	{
-		"unit": "Unit 8 - 2D Array",
+		"unit": "Unit 8: 2D Array",
 		"type": 1,
 		"question": "Which of these expressions get the number of columns in a 2D array?",
 		"options": [
