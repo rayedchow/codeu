@@ -1,0 +1,166 @@
+[
+	{
+		"unit": "Unit 1 - Primitive Types",
+		"type": 2,
+		"question": "Write a line that creates a variable named 'hello' and assign it the value 'world' in Java. Write the solution in the shortest way possible (with spaces).",
+		"answer": "String hello = \"world\";"
+	},
+	{
+		"unit": "Unit 1 - Primitive Types",
+		"type": 1,
+		"question": "Which of these methods displays an input to the the computer monitor?",
+		"options": [
+			"System.in.print()",
+			"print()",
+			"System.out.print()",
+			"System.out.input()"
+		],
+		"answer": 2
+	},
+	{
+		"unit": "Unit 2 - Using Objects",
+		"type": 1,
+		"question": "Which of these are NOT a way to create the string 'test'?",
+		"options": [
+			"String test = \"hello\";",
+			"String test: \"hello\"",
+			"String test; test = \"hello\"",
+			"String test = new String(\"hello\");"
+		],
+		"answer": 1
+	},
+	{
+		"unit": "Unit 2 - Using Objects",
+		"type": 1,
+		"question": "What are reference data types also known as?",
+		"options": [
+			"class data types",
+			"java data",
+			"variables",
+			"constants"
+		],
+		"answer": 0
+	},
+	{
+		"unit": "Unit 3 - Boolean Expressions and If Statements",
+		"type": 1,
+		"question": "Which of these are NOT a relational operator?",
+		"options": [
+			"==",
+			">",
+			"<",
+			"=<"
+		],
+		"answer": 3
+	},
+	{
+		"unit": "Unit 3 - Boolean Expressions and If Statements",
+		"type": 3,
+		"question": "You are given a variable \"day\" that is an integer from 1-7 that represents what day of week it is, from Sunday (1) to Saturday (7). Print out \"true\" or \"false\" whether or not the day is Friday.",
+		"input": 6,
+		"answer": "true"
+	},
+	{
+		"unit": "Unit 4 - Iteration",
+		"type": 1,
+		"question": "In loops, when does the statement inside the loop execute?",
+		"options": [
+			"when i = 30",
+			"when the condition being checked is false",
+			"whenever i = 0",
+			"when the condition being checked is true"
+		],
+		"answer": 3
+	},
+	{
+		"unit": "Unit 4 - Iteration",
+		"type": 3,
+		"question": "You are given an array of strings, \"days\", that represents the days in the week. Loop this array and print every item in one line without any spaces (NOT ln).",
+		"input": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+		"answer": "SundayMondayTuesdayWednesdayThursdayFridaySaturday"
+	},
+	{
+		"unit": "Unit 5 - Classes",
+		"type": 1,
+		"question": "What is the main method's header?",
+		"options": [
+			"public static main (String[] args)",
+			"public void main (String args)",
+			"public static void main (String[] args)",
+			"private static void main (String args)"
+		],
+		"answer": 2
+	},
+	{
+		"unit": "Unit 5 - Classes",
+		"type": 1,
+		"question": "What type of method is a print statement?",
+		"options": [
+			"It is a private method",
+			"It is a static method",
+			"It is an instance method",
+			"It is a non-static method"
+		],
+		"answer": 1
+	},
+	{
+		"unit": "Unit 6 - Array",
+		"type": 1,
+		"question": "What is a for-each loop used for?",
+		"options": [
+			"To loop until a condition is true",
+			"To loop each variable created in a file",
+			"To loop until a condition is false",
+			"To loop through all items in an array"
+		],
+		"answer": 3
+	},
+	{
+		"unit": "Unit 6 - Array",
+		"type": 2,
+		"question": "Declare a string array \"fruits\" with items \"mango\", \"pineapple\", and \"raspberry\". Write the solution in the shortest way possible (with spaces).",
+		"answer": "String[] fruits = {\"mango\", \"pineapple\", \"raspberry\"};"
+	},
+	{
+		"unit": "Unit 7 - ArrayList",
+		"type": 1,
+		"question": "What is an ArrayList?",
+		"options": [
+			"A flexible array object that can change size.",
+			"A static array that cannot change.",
+			"A dynamic array that can have items with different datatypes.",
+			"The same thing as an Array."
+		],
+		"answer": 0
+	},
+	{
+		"unit": "Unit 7 - ArrayList",
+		"type": 2,
+		"question": "You are given a lisy called \"myData\". Write the expression that would return the size/length of the list, in the shortest way possible.",
+		"answer": "myData.size()"
+	},
+	{
+		"unit": "Unit 8 - 2D Array",
+		"type": 1,
+		"question": "How do you declare a 2D Array of integers?",
+		"options": [
+			"ArrayList(int[]) numbers = new Type(int)[10][10];",
+			"int[][] numbers = new int[10][10];",
+			"int[[]] numbers = new int[10[10]];",
+			"int[][] numbers = new Type(int)[10][10];"
+		],
+		"answer": 1
+	},
+	{
+		"unit": "Unit 8 - 2D Array",
+		"type": 1,
+		"question": "Which of these expressions get the number of columns in a 2D array?",
+		"options": [
+			"numbers[4].length",
+			"length(numbers)",
+			"numbers.length",
+			"length(numbers[4])"
+		],
+		"answer": 0
+	}
+]
