@@ -6,6 +6,12 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'title': ['Inconsolata, sans-serif']
+    }
   },
-  plugins: [],
+  plugins: [
+    // ...
+    require('@tailwindcss/typography'),
+  ],
 }
