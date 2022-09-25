@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react'
 
 type Props = {
@@ -5,6 +6,7 @@ type Props = {
     description: string;
     completed: number;
     exerciseCount: number;
+    unit: number;
 }
 
 const CourseListComponent = (props: Props) => {
@@ -18,10 +20,12 @@ const CourseListComponent = (props: Props) => {
                 <p className="text-[#877EB4]">{props.completed} out of {props.exerciseCount} completed</p>
             </div>
         </div>
-        <button className="flex justify-around items-center text-md">
-            <p>Start</p>
-            <img src="/arrow.svg" />
-        </button>
+        <Link href={`/courses/java/lesson/${props.unit}`}>
+            <button className="flex justify-around items-center text-md">
+                <p>Start</p>
+                <img src="/arrow.svg" />
+            </button>
+        </Link>
     </div>
   )
 }

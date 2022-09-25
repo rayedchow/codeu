@@ -62,7 +62,7 @@ const Java = () => {
       <Content>
         <section className="relative bg-[#130F28] w-[60rem] m-auto rounded-xl mt-[50px]">
           {courses.map((item, i) => (
-            <CourseListComponent key={i} title={`Unit ${i+1}: ${item.title}`} description={item.description} completed={item.completed} exerciseCount={item.exerciseCount} />
+            <CourseListComponent key={i} title={`Unit ${i+1}: ${item.title}`} unit={i+1} description={item.description} completed={item.completed} exerciseCount={item.exerciseCount} />
           ))}
         </section>
       </Content>
