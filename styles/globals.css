@@ -58,3 +58,13 @@ Link {
   background-color: #34495e;
   color: #16a085;
 }
+
+code {
+  background: #ffeff0;
+  word-wrap: break-word;;
+  box-decoration-break: clone;
+  padding: .1rem .3rem .2rem;
+  border-radius: .2rem;
+  font-weight: 600 !important;
+  font-family: 'Inconsolata', monospace;
+}

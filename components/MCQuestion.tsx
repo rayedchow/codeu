@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import ReactHTMLParser from 'react-html-parser'
 
 type Props = {
     number: number
@@ -34,7 +35,7 @@ const MCQuestion = (props: Props) => {
         <button className="submit" onClick={() => setShowAnswer(true)}>Submit</button>
         {showAnswer ? <>
             {(isCorrect == props.question.answer) ? <p className="text-green-500">Correct!</p> : <p className="text-red-500">Incorrect</p>}
-            {props.question.explanation}
+            {ReactHTMLParser(props.question.explanation)}
         </> : <></>}
     </div>
   )
