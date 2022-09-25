@@ -17,7 +17,7 @@ const Home: NextPage = () => {
         <div className="container codet mx-auto">
             <div className="flex flex-row flex-wrap py-4">
                 <main role="main" className="mb-10 sm:w-2/3 md:w-3/4 pr-20 pt-1 px-2">
-                  <ul className="flex flex-col overflow-hidden space-y-5">
+                  <ul className="flex flex-col overflow-hidden space-y-7">
                     <li className="text-2xl font-medium regt">COURSE INFO</li>
                     <li>This Java course will introduce key concepts in programming to help you form a solid foundation around universal coding principles like variables and data structures.</li>
                     <li className="text-2xl font-medium regt">WHAT YOU'LL GAIN</li>
@@ -31,12 +31,13 @@ const Home: NextPage = () => {
                 </main>
                 <aside className="mb-10 w-full sm:w-1/3 md:w-1/4 px-2 border-l-[1px] border-l-[#403769]">
                     <div className="sticky top-0 p-4 w-full">
-                      <div className="mb-50">
-                        <h1 className="text-xl codet">An exam for learning an introduction and practical applications of Java, and also a practicing tool for AP Computer Science A</h1>
+                      <div className="mb-50 space-y-5">
+                        <h1 className="text-2xl font-medium regt">TAKE THE EXAM</h1>
+                        <h1 className="text-xl codet">An exam for learning an introduction and practical applications of Java, and also a practicing tool for Intro to Computer Science courses</h1>
                       </div>
                       <div className="mt-50">
                         <Link href="/courses/java/exam">
-                          <button className="flex justify-evenly items-center text-md bg-[#130F28]">
+                          <button className="flex justify-evenly items-center text-md bg-[#130F28] w-[170px]">
                             <p>Start Exam</p>
                             <img src="/arrow.svg" />
                           </button>
