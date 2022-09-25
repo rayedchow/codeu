@@ -19,12 +19,16 @@ const Question = () => {
 					</div>
 					<div className="mt-6 prose prose-indigo prose-lg mx-auto">
 					<p>
-						Primitive types are this and they do that. Some examples are:
+						A type is a set of values (e.g. integers, floaters, etc.) and a set of operations (e.g. +, -, *, /, etc.) on them.
+						Data types can be categorized as either **primitive** or **reference**.
+
+						The primitive types used in this course define the set of operations for numbers and boolean (true/false) values.
+						Examples are:
 					</p>
 					<ul role="list">
-						<li>Being primitive.</li>
-						<li>Being types.</li>
-						<li>Not being reference types.</li>
+						<li>int - stores integers (whole numbers like 5, 84, -49893</li>
+						<li>double - stores floating point numbers (decimal numbers like 6.3, -0.9, 60931.89479</li>
+						<li>boolean - stores Boolean values (either true or false)</li>
 					</ul>
 					<p>
 						Here is a question that will test your knowledge on what was just said.
