@@ -3,7 +3,7 @@
 		"unit": "Unit 1: Primitive Types",
 		"type": 2,
 		"question": "Write a program that creates a variable named 'hello' and assign it the value 'world' in Java. Make sure to include \"public class Main\" and the main function. At the end, print out hello to the console.",
-		"answer": "String hello = \"world\";"
+		"answer": "world"
 	},
 	{
 		"unit": "Unit 1: Primitive Types",
@@ -118,8 +118,8 @@
 	{
 		"unit": "Unit 6: Array",
 		"type": 2,
-		"question": "Declare a string array \"fruits\" with items \"mango\", \"pineapple\", and \"raspberry\". Write the solution in the shortest way possible (with spaces).",
-		"answer": "String[] fruits = {\"mango\", \"pineapple\", \"raspberry\"};"
+		"question": "Declare a string array \"fruits\" with items \"mango\", \"pineapple\", and \"raspberry\". Print out the array.",
+		"answer": "[Ljava.lang.String;@d716361"
 	},
 	{
 		"unit": "Unit 7: ArrayList",

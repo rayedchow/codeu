@@ -15,13 +15,17 @@ export const compileAnswers = (answers: (string | number)[]) => {
 			else examData.incorrect.push(questions[i].unit);
 		} else if(typeof answer == 'string') {
 			console.log('compiling')
-			compileInput(i, answer);
+			compileInput(i, answer, (output) => {
+				if(output == questions[i].answer) {
+
+				}
+			});
 		}
 	}
 	return examData;
 }
 
-export const compileInput = (i: number, answer: string) => {
+export const compileInput = (i: number, answer: string, returnOutput) => {
 
 	const handleCompile = () => {
 		const formData = {
@@ -82,7 +86,7 @@ export const compileInput = (i: number, answer: string) => {
 			}, 2000);
 			return;
 		  } else {
-			console.log("output", atob(response.data.stdout));
+			returnOutput(atob(response.data.stdout));
 			return;
 		  }
 		} catch (err) {
