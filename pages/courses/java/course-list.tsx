@@ -1,7 +1,7 @@
 import Content from '../../../components/Content'
 import CourseListComponent from '../../../components/CourseListComponent'
 
-const courses = [
+export const courses = [
   {
     title: "Primitive Types",
     description: "Primitive and reference data types, data structures",
@@ -33,20 +33,44 @@ const courses = [
     exerciseCount: 2,
   },
   {
-    title: "Array",
+    title: "Arrays",
     description: "Using the Array data structure",
     completed: 0,
     exerciseCount: 2,
   },
   {
-    title: "ArrayList",
+    title: "ArrayLists",
     description: "Using the ArrayList data structure",
     completed: 0,
     exerciseCount: 2,
   },
   {
-    title: "2D Array",
+    title: "2D Arrays",
     description: "Using the 2D Array data structure",
+    completed: 0,
+    exerciseCount: 2,
+  },
+  {
+    title: "Overloading & Overriding",
+    description: "Understanding overloading vs. overriding",
+    completed: 0,
+    exerciseCount: 2,
+  },
+  {
+    title: "Inheritance with Interface and Abstract Classes",
+    description: "Understanding Java class inheritance structure and implementing interface and abstract classes",
+    completed: 0,
+    exerciseCount: 2,
+  },
+  {
+    title: "Exception Handling",
+    description: "Learning how to handle errors and exceptions",
+    completed: 0,
+    exerciseCount: 2,
+  },
+  {
+    title: "Multithreading",
+    description: "Understanding CPU optimization and executing multiple parts of a Java program simultaneously",
     completed: 0,
     exerciseCount: 2,
   },
@@ -55,10 +79,6 @@ const courses = [
 const Java = () => {
   return (
     <div>
-      {/* <CodeEditorWindow onChange={undefined} language={"java"} code={undefined} theme={"dark"} /> */}
-      {/* <div className="sm:w-[70rem] bg-[#130F28] lg:h-[40rem] sm:h-[60rem] rounded-xl">
-        Lessono 1
-      </div> */}
       <Content>
         <section className="relative bg-[#130F28] w-[60rem] m-auto rounded-xl mt-[50px]">
           {courses.map((item, i) => (

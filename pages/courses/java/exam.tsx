@@ -16,10 +16,10 @@ const Exam = () => {
 		monaco.editor.defineTheme('myTheme', {
 			base: 'vs',
 			inherit: false,
-			rules: [{ background: '464986', borderRadius: '15px' }],
+			rules: [{ background: '161730', borderRadius: '15px' }],
 			colors: {
 				'editor.foreground': '#FFFFFF',
-				'editor.background': '#323568',
+				'editor.background': '#1C1D37',
 				'editorCursor.foreground': '#FFFFFF',
 				'editor.lineHighlightBackground': '#0000FF20',
 				'editorLineNumber.foreground': '#FFFFFF',
@@ -83,7 +83,7 @@ const Exam = () => {
 								theme="vs-dark"
 								defaultLanguage="java"
 								defaultValue="// your answer here"
-								className="max-h-[500px] mt-10"
+								className="mt-10"
 							/>
 							
 							// <textarea className="w-full mt-5 bg-[#2C2556] rounded focus:outline-none p-5" />

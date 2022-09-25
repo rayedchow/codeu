@@ -129,7 +129,7 @@
 		}
 	},
 	{
-		"unit": "Unit 6: Array",
+		"unit": "Unit 6: Arrays",
 		"text": [
 			"If you are working with arrays(or other collections data structures), you can use an alternative syntax for a <b>for</b> loop (enhanced form of for loop) to iterate through items of arrays/collections.",
 			"",
@@ -138,7 +138,7 @@
 			"<i>Read more about this at <a  href=\"https://longbaonguyen.github.io/courses/apcsa/lecture17.pdf\" target=\"_blank\">https://longbaonguyen.github.io/courses/apcsa/lecture17.pdf</a>.</i>"
 		],
 		"question": {
-			"unit": "Unit 6: Array",
+			"unit": "Unit 6: Arrays",
 			"type": 1,
 			"question": "What is a for-each loop used for?",
 			"options": [
@@ -152,7 +152,7 @@
 		}
 	},
 	{
-		"unit": "Unit 7: ArrayList",
+		"unit": "Unit 7: ArrayLists",
 		"text": [
 			"An ArrayList (or list) is a collection storing an ordered sequence of elements.",
 			"- each element is acccessible by a 0-based index",
@@ -163,7 +163,7 @@
 			"<i>Read more about this at <a  href=\"https://longbaonguyen.github.io/courses/apcsa/lecture18.pdf\" target=\"_blank\">https://longbaonguyen.github.io/courses/apcsa/lecture18.pdf</a>.</i>"
 		],
 		"question": {
-			"unit": "Unit 7: ArrayList",
+			"unit": "Unit 7: ArrayLists",
 			"type": 1,
 			"question": "What is an ArrayList?",
 			"options": [
@@ -177,7 +177,115 @@
 		}
 	},
 	{
-		"unit": "Unit 8: 2D Array",
+		"unit": "Unit 8: 2D Arrays",
+		"text": [
+			"A two-dimensional (2D) array has rows and columns.",
+			"A row has horizontal elements. A column has vertical elements.",
+			"",
+			"Two dimensional arrays are especially useful when the data is naturally organized in rows and columns like in a spreadsheet, bingo, battleship, theater seats, classroom seats, connect-four game, or a picture.",
+			"",
+			"To declare and initialzie a 2D array, write:",
+			"<code>type[][] name = new type[row][col];</code>",
+			"",
+			"<i>Read more about this at <a  href=\"https://longbaonguyen.github.io/courses/apcsa/lecture18.pdf\" target=\"_blank\">https://longbaonguyen.github.io/courses/apcsa/lecture18.pdf</a>.</i>"
+		],
+		"question": {
+			"unit": "Unit 8: 2D Array",
+			"type": 1,
+			"question": "How do you declare a 2D Array of integers?",
+			"options": [
+				"ArrayList(int[]) numbers = new Type(int)[10][10];",
+				"int[][] numbers = new int[10][10];",
+				"int[[]] numbers = new int[10[10]];",
+				"int[][] numbers = new Type(int)[10][10];"
+			],
+			"answer": 1,
+			"explanation": "To create a 2D Array of integers, you write <code>int[][] numbers = new int[row#][col#]</code>"
+		}
+	},
+	{
+		"unit": "Unit 9: Overloading & Overriding",
+		"text": [
+			"A two-dimensional (2D) array has rows and columns.",
+			"A row has horizontal elements. A column has vertical elements.",
+			"",
+			"Two dimensional arrays are especially useful when the data is naturally organized in rows and columns like in a spreadsheet, bingo, battleship, theater seats, classroom seats, connect-four game, or a picture.",
+			"",
+			"To declare and initialzie a 2D array, write:",
+			"<code>type[][] name = new type[row][col];</code>",
+			"",
+			"<i>Read more about this at <a  href=\"https://longbaonguyen.github.io/courses/apcsa/lecture18.pdf\" target=\"_blank\">https://longbaonguyen.github.io/courses/apcsa/lecture18.pdf</a>.</i>"
+		],
+		"question": {
+			"unit": "Unit 8: 2D Array",
+			"type": 1,
+			"question": "How do you declare a 2D Array of integers?",
+			"options": [
+				"ArrayList(int[]) numbers = new Type(int)[10][10];",
+				"int[][] numbers = new int[10][10];",
+				"int[[]] numbers = new int[10[10]];",
+				"int[][] numbers = new Type(int)[10][10];"
+			],
+			"answer": 1,
+			"explanation": "To create a 2D Array of integers, you write <code>int[][] numbers = new int[row#][col#]</code>"
+		}
+	},
+	{
+		"unit": "Unit 10: Inheritance with Interface & Abstract Classes",
+		"text": [
+			"A two-dimensional (2D) array has rows and columns.",
+			"A row has horizontal elements. A column has vertical elements.",
+			"",
+			"Two dimensional arrays are especially useful when the data is naturally organized in rows and columns like in a spreadsheet, bingo, battleship, theater seats, classroom seats, connect-four game, or a picture.",
+			"",
+			"To declare and initialzie a 2D array, write:",
+			"<code>type[][] name = new type[row][col];</code>",
+			"",
+			"<i>Read more about this at <a  href=\"https://longbaonguyen.github.io/courses/apcsa/lecture18.pdf\" target=\"_blank\">https://longbaonguyen.github.io/courses/apcsa/lecture18.pdf</a>.</i>"
+		],
+		"question": {
+			"unit": "Unit 8: 2D Array",
+			"type": 1,
+			"question": "How do you declare a 2D Array of integers?",
+			"options": [
+				"ArrayList(int[]) numbers = new Type(int)[10][10];",
+				"int[][] numbers = new int[10][10];",
+				"int[[]] numbers = new int[10[10]];",
+				"int[][] numbers = new Type(int)[10][10];"
+			],
+			"answer": 1,
+			"explanation": "To create a 2D Array of integers, you write <code>int[][] numbers = new int[row#][col#]</code>"
+		}
+	},
+	{
+		"unit": "Unit 11: Exception Handling",
+		"text": [
+			"A two-dimensional (2D) array has rows and columns.",
+			"A row has horizontal elements. A column has vertical elements.",
+			"",
+			"Two dimensional arrays are especially useful when the data is naturally organized in rows and columns like in a spreadsheet, bingo, battleship, theater seats, classroom seats, connect-four game, or a picture.",
+			"",
+			"To declare and initialzie a 2D array, write:",
+			"<code>type[][] name = new type[row][col];</code>",
+			"",
+			"<i>Read more about this at <a  href=\"https://longbaonguyen.github.io/courses/apcsa/lecture18.pdf\" target=\"_blank\">https://longbaonguyen.github.io/courses/apcsa/lecture18.pdf</a>.</i>"
+		],
+		"question": {
+			"unit": "Unit 8: 2D Array",
+			"type": 1,
+			"question": "How do you declare a 2D Array of integers?",
+			"options": [
+				"ArrayList(int[]) numbers = new Type(int)[10][10];",
+				"int[][] numbers = new int[10][10];",
+				"int[[]] numbers = new int[10[10]];",
+				"int[][] numbers = new Type(int)[10][10];"
+			],
+			"answer": 1,
+			"explanation": "To create a 2D Array of integers, you write <code>int[][] numbers = new int[row#][col#]</code>"
+		}
+	},
+	{
+		"unit": "Unit 12: Multithreading",
 		"text": [
 			"A two-dimensional (2D) array has rows and columns.",
 			"A row has horizontal elements. A column has vertical elements.",
