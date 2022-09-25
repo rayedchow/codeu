@@ -136,8 +136,8 @@
 	{
 		"unit": "Unit 7: ArrayList",
 		"type": 2,
-		"question": "You are given a lisy called \"myData\". Write the expression that would return the size/length of the list, in the shortest way possible.",
-		"answer": "myData.size()"
+		"question": "You are given a list called \"myData\". (\"hi\", \"hello\", and \"bye\") Write the expression that would return the size/length of the list, in the shortest way possible.",
+		"answer": "3"
 	},
 	{
 		"unit": "Unit 8: 2D Array",

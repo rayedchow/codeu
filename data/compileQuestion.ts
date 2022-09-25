@@ -17,8 +17,8 @@ export const compileAnswers = (answers: (string | number)[]) => {
 			console.log('compiling')
 			compileInput(i, answer, (output) => {
 				if(output == questions[i].answer) {
-
-				}
+					examData.correct++;
+				} else examData.incorrect.push(questions[i].unit);
 			});
 		}
 	}

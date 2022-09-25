@@ -34,7 +34,6 @@ const Exam = () => {
 	const nextQuestion = () => {
 		if(questions[queNum-1].type === 1) setAnswers(answers.concat(currAns));
 		else {
-			compileInput(queNum-1, editorRef.current?.getValue());
 			setAnswers(answers.concat(editorRef.current?.getValue()));
 		}
 		setQueNum(queNum+1);
@@ -54,7 +53,11 @@ const Exam = () => {
 			<div>
 			<Content>
 				<section className="relative bg-[#130F28] w-[60rem] min-h-[30rem] m-auto rounded-xl mt-[50px]">
-					
+					You got a {(examData.correct/examData.total)*100}% on the exam.
+					Here is a list of topics you need to work on:
+					{examData.incorrect.filter((v, i, s) => (s.indexOf(v) === i)).map((item, i) => (
+						<p key={i}>- {item}</p>
+					))}
 				</section>
 			</Content>
 			</div>
