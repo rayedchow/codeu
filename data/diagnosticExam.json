@@ -2,7 +2,7 @@
 	{
 		"unit": "Unit 1: Primitive Types",
 		"type": 2,
-		"question": "Write a line that creates a variable named 'hello' and assign it the value 'world' in Java. Write the solution in the shortest way possible (with spaces).",
+		"question": "Write a program that creates a variable named 'hello' and assign it the value 'world' in Java. Make sure to include \"public class Main\" and the main function. At the end, print out hello to the console.",
 		"answer": "String hello = \"world\";"
 	},
 	{
@@ -56,7 +56,7 @@
 	{
 		"unit": "Unit 3: Boolean Expressions and If Statements",
 		"type": 3,
-		"question": "You are given a variable \"day\" that is an integer from 1-7 that represents what day of week it is, from Sunday (1) to Saturday (7). Print out \"true\" or \"false\" whether or not the day is Friday.",
+		"question": "You are given a variable \"day\" that is an integer from 1-7 (set to 6) that represents what day of week it is, from Sunday (1) to Saturday (7). Print out \"true\" or \"false\" whether or not the day is Friday.",
 		"input": 6,
 		"answer": "true"
 	},

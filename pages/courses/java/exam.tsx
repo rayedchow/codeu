@@ -3,10 +3,14 @@ import Content from "../../../components/Content"
 import questions from '../../../data/diagnosticExam.json'
 import Editor from "@monaco-editor/react";
 import { languages, editor } from "monaco-editor/esm/vs/editor/editor.api"
+import { compileAnswers, compileInput } from "../../../data/compileQuestion";
 const Exam = () => {
 	const editorRef = useRef(null);
 	const [queNum, setQueNum] = useState(1);
 	const [currAns, setAns] = useState(null);
+	const [answers, setAnswers] = useState([]);
+	const [examComplete, setComplete] = useState(false);
+	const [examData, setExamData] = useState(null);
 	function handleEditorDidMount(editor, monaco) {
 		editorRef.current = editor;
 		monaco.editor.defineTheme('myTheme', {
@@ -26,12 +30,36 @@ const Exam = () => {
 		});
 		monaco.editor.setTheme('myTheme');
 	}
-	function showValue() {
-		alert(editorRef.current?.getValue());
+
+	const nextQuestion = () => {
+		if(questions[queNum-1].type === 1) setAnswers(answers.concat(currAns));
+		else {
+			compileInput(queNum-1, editorRef.current?.getValue());
+			setAnswers(answers.concat(editorRef.current?.getValue()));
+		}
+		setQueNum(queNum+1);
+		setAns(null);
 	}
 	console.log(questions[queNum-1]);
-	
 
+	const isLastQuestion = (queNum === questions.length);
+
+	const completeExam = () => {
+		setExamData(compileAnswers(answers));
+		setComplete(true);
+	}
+	
+	if(examComplete) {
+		return (
+			<div>
+			<Content>
+				<section className="relative bg-[#130F28] w-[60rem] min-h-[30rem] m-auto rounded-xl mt-[50px]">
+					
+				</section>
+			</Content>
+			</div>
+		)
+	}
 	return (
 		<div>
 			<Content>
@@ -60,7 +88,12 @@ const Exam = () => {
 							
 							// <textarea className="w-full mt-5 bg-[#2C2556] rounded focus:outline-none p-5" />
 						}
-						<button onClick={showValue}>Run</button>
+
+						{isLastQuestion ? 
+							<button onClick={() => completeExam()}>Complete Exam</button>	
+							:
+							<button onClick={() => nextQuestion()}>Next Question</button>
+						}
 					</div>
 				</section>
 			</Content>
