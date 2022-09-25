@@ -9,18 +9,13 @@ const Navbar = () => {
                 <img src="/logo.svg" className="h-[35px]" />
             </a>
         </Link>
-        {/* <ul className="flex space-x-10">
+        <ul className="flex space-x-10">
             <Link href="/courses/java/course-list">
                 <a>
                     <li>Course List</li>
                 </a>
             </Link>
-            <Link href="/courses/java/course-list">
-                <a>
-                    <li>About</li>
-                </a>
-            </Link>
-        </ul> */}
+        </ul>
     </div>
   )
 }

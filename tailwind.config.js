@@ -6,8 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
-    fontFamily: {
-      'title': ['Inconsolata']
+    listStyleType: {
+      roman: 'upper-roman',
+      alpha: 'upper-alpha',
     }
   },
   plugins: [

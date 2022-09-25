@@ -19,7 +19,7 @@ const Home: NextPage = () => {
         <div className="mt-10" />
         <div className="container codet mx-auto">
             <div className="flex flex-row flex-wrap py-4">
-                <main role="main" className="h-screen w-full sm:w-2/3 md:w-3/4 pt-1 px-2">
+                <main role="main" className="h-screen sm:w-2/3 md:w-3/4 pr-20 pt-1 px-2">
                   <ul className="flex flex-col overflow-hidden space-y-5">
                     <li className="text-2xl font-medium regt">COURSE INFO</li>
                     <li>This Java course will introduce key concepts in programming to help you form a solid foundation around universal coding principles like variables and data structures.</li>
@@ -36,10 +36,12 @@ const Home: NextPage = () => {
                         <h1 className="text-xl codet">An exam for learning an introduction and practical applications of Java, and also a practicing tool for AP Computer Science A</h1>
                       </div>
                       <div className="mt-50">
-                        <button className="flex justify-evenly items-center text-md bg-[#130F28]">
-                          <p>Start Exam</p>
-                          <img src="/arrow.svg" />
-                        </button>
+                        <Link href="/courses/java/exam">
+                          <button className="flex justify-evenly items-center text-md bg-[#130F28]">
+                            <p>Start Exam</p>
+                            <img src="/arrow.svg" />
+                          </button>
+                        </Link>
                       </div>
                       
                     </div>
