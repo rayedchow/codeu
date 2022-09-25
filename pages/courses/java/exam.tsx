@@ -4,6 +4,7 @@ import questions from '../../../data/diagnosticExam.json'
 import Editor from "@monaco-editor/react";
 import { languages, editor } from "monaco-editor/esm/vs/editor/editor.api"
 import { compileAnswers, compileInput } from "../../../data/compileQuestion";
+import Link from "next/link";
 const Exam = () => {
 	const editorRef = useRef(null);
 	const [queNum, setQueNum] = useState(1);
@@ -52,11 +53,11 @@ const Exam = () => {
 		return (
 			<div>
 			<Content>
-				<section className="relative bg-[#130F28] w-[60rem] min-h-[30rem] m-auto rounded-xl mt-[50px]">
+				<section className="relative bg-[#130F28] w-[60rem] min-h-[30rem] m-auto rounded-xl mt-[50px] p-5">
 					You got a {(examData.correct/examData.total)*100}% on the exam.
 					Here is a list of topics you need to work on:
 					{examData.incorrect.filter((v, i, s) => (s.indexOf(v) === i)).map((item, i) => (
-						<p key={i}>- {item}</p>
+						<li key={i}>{item}</li>
 					))}
 				</section>
 			</Content>
@@ -72,7 +73,7 @@ const Exam = () => {
 							{queNum}. {questions[queNum-1].question}
 						</div>
 						{(questions[queNum-1].type == 1) ? 
-							<ol className="flex flex-col list-alpha -space-y-5">
+							<ol className="flex flex-col list-alpha -space-y-3 ml-5">
 								{questions[queNum-1].options.map((item, i) => (
 									<li key={i} className="first:-mb-[1px]" ><button className={(currAns == i) ? "submit" : ""} onClick={(e) => {
 										e.preventDefault();
