@@ -56,7 +56,7 @@ const Exam = () => {
 				<section className="relative bg-[#130F28] w-[60rem] min-h-[30rem] m-auto rounded-xl mt-[50px] p-5">
 					You got a {(examData.correct/examData.total)*100}% on the exam.
 					Here is a list of topics you need to work on:
-					{examData.incorrect.filter((v, i, s) => (s.indexOf(v) === i)).map((item, i) => (
+					{examData.incorrect.map((item, i) => (
 						<li key={i}>{item}</li>
 					))}
 				</section>

@@ -11,14 +11,14 @@ export const compileAnswers = (answers: (string | number)[]) => {
 		const answer = answers[i];
 		console.log(answer);
 		if((questions[i].type == 1) && (typeof answer == 'number')) {
-			if(questions[i].answer === answer) examData.correct++;
-			else examData.incorrect.push(questions[i].unit);
+			if(questions[i].answer != answer) examData.incorrect.push(questions[i].unit);
+			else examData.correct++;
 		} else if(typeof answer == 'string') {
 			console.log('compiling')
 			compileInput(i, answer, (output) => {
-				if(output == questions[i].answer) {
-					examData.correct++;
-				} else examData.incorrect.push(questions[i].unit);
+				if(output != questions[i].answer) {
+					examData.incorrect.push(questions[i].unit);
+				} else examData.correct++;
 			});
 		}
 	}
