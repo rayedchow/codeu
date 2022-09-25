@@ -14,15 +14,11 @@ type Props = {
 const MCQuestion = (props: Props) => {
   const [isCorrect, setAnswer] = useState(null);
   const [showAnswer, setShowAnswer] = useState(false);
+
   return (
     <div>
         <div className="-mb-10">
             {props.number}. {props.question.question}
-            {/* <ol className="list-roman">
-                {props.romanOptions.map((item, i) => (
-                    <li key={i}>{item}</li>
-                ))}
-            </ol> */}
         </div>
         <ol className="flex flex-col list-alpha -space-y-5">
             {props.question.options.map((item, i) => (
