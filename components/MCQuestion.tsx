@@ -1,39 +1,41 @@
 import React, { useState } from 'react'
 
 type Props = {
-    number: number;
-    title: string;
-    romanOptions?: string[];
-    options: string[];
-    correctAnswer: string;
+    number: number
+    question: {
+        question: string
+        options: string[],
+        answer: number
+        explanation: string
+    }
 }
 
 const MCQuestion = (props: Props) => {
   const [isCorrect, setAnswer] = useState(null);
+  const [showAnswer, setShowAnswer] = useState(false);
   return (
     <div>
         <div className="-mb-10">
-            {props.number}. {props.title}
-            <ol className="list-roman">
+            {props.number}. {props.question.question}
+            {/* <ol className="list-roman">
                 {props.romanOptions.map((item, i) => (
                     <li key={i}>{item}</li>
                 ))}
-            </ol>
+            </ol> */}
         </div>
         <ol className="flex flex-col list-alpha -space-y-5">
-            {props.options.map((item, i) => (
-                <li key={i} className="first:-mb-[1px]" onClick={(e) => {
+            {props.question.options.map((item, i) => (
+                <li key={i} className="first:-mb-[1px]" ><button className={(isCorrect == i) ? "submit" : ""} onClick={(e) => {
                     e.preventDefault();
-                    console.log(null === true)
-                    if (item.match(props.correctAnswer)) {
-                        setAnswer(true);
-                    } else {
-                        setAnswer(false);
-                    }
-                }}><button>{item}</button></li>
+                    setAnswer(i)
+                }}>{item}</button></li>
             ))}
         </ol>
-        {isCorrect === true ? <p className="text-green-500">You are correct and will make $100,000 a year as a software engineer!</p> : <p className="text-red-500">You are WRONG and will never amount to anything.</p>}
+        <button className="submit" onClick={() => setShowAnswer(true)}>Submit</button>
+        {showAnswer ? <>
+            {(isCorrect == props.question.answer) ? <p className="text-green-500">Correct!</p> : <p className="text-red-500">Incorrect</p>}
+            {props.question.explanation}
+        </> : <></>}
     </div>
   )
 }

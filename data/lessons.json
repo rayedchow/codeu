@@ -9,7 +9,7 @@
 			"The primitive types used in this course define the set of operations for numbers and boolean (true/false) values.",
 			"Examples are <b>int</b>, <b>double</b>, and <b>boolean</b>.",
 			"",
-			"Read more about this at <a>https://longbaonguyen.github.io/courses/apcsa/lecture2.pdf</a>."
+			"<i>Read more about this at <a  href=\"https://longbaonguyen.github.io/courses/apcsa/lecture2.pdf\" target=\"_blank\">https://longbaonguyen.github.io/courses/apcsa/lecture2.pdf</a>.</i>"
 		],
 		"question": {
 			"unit": "Unit 1: Primitive Types",
@@ -23,6 +23,33 @@
 			],
 			"answer": 2,
 			"explanation": "In java, System.out.print() or System.out.println() are the functions that print out inputs and values to the console/terminal."
+		}
+	},
+	{
+		"unit": "Unit 2: Using Objects",
+		"text": [
+			"A string is an object storing a sequence of text characters.",
+			"- A string is not a primitive type. String is an object type",
+			"",
+			"Ways to initialize a string:",
+			"- String a = new String(\"text\");",
+			"- String b = \"text\";",
+			"- String c; c = \"text\";",
+			"",
+			"<i>Read more about this at <a  href=\"https://longbaonguyen.github.io/courses/apcsa/lecture6.pdf\" target=\"_blank\">https://longbaonguyen.github.io/courses/apcsa/lecture6.pdf</a>.</i>"
+		],
+		"question": {
+			"unit": "Unit 2: Using Objects",
+			"type": 1,
+			"question": "Which of these are NOT a way to create the string 'test'?",
+			"options": [
+				"String test = \"hello\";",
+				"String test: \"hello\"",
+				"String test; test = \"hello\"",
+				"String test = new String(\"hello\");"
+			],
+			"answer": 1,
+			"explanation": "All of these are ways to create a string, except option B because ':' is not the character used to set a variable."
 		}
 	}
 ]
