@@ -3,50 +3,50 @@ import CourseListComponent from '../../../components/CourseListComponent'
 
 const courses = [
   {
-    title: "Java Basics",
+    title: "Primitive Types",
     description: "Primitive and reference data types, data structures",
     completed: 0,
     exerciseCount: 2,
   },
   {
-    title: "Objects",
+    title: "Using Objects",
     description: "Learn how to create objects and define classes",
     completed: 0,
     exerciseCount: 2,
   },
   {
     title: "Boolean Expressions and If Statements",
-    description: "Primitive and reference data types, data structures",
+    description: "Conditional statements and comparisons",
     completed: 0,
     exerciseCount: 2,
   },
   {
     title: "Iteration",
-    description: "Primitive and reference data types, data structures",
+    description: "Using loops and arrays to iterate through data",
     completed: 0,
     exerciseCount: 2,
   },
   {
-    title: "Arrays",
-    description: "Primitive and reference data types, data structures",
+    title: "Classes",
+    description: "Defining and creating classes",
     completed: 0,
-    exerciseCount: 4,
+    exerciseCount: 2,
+  },
+  {
+    title: "Array",
+    description: "Using the Array data structure",
+    completed: 0,
+    exerciseCount: 2,
+  },
+  {
+    title: "ArrayList",
+    description: "Using the ArrayList data structure",
+    completed: 0,
+    exerciseCount: 2,
   },
   {
     title: "2D Array",
-    description: "Primitive and reference data types, data structures",
-    completed: 0,
-    exerciseCount: 2,
-  },
-  {
-    title: "Inheritance",
-    description: "Primitive and reference data types, data structures",
-    completed: 0,
-    exerciseCount: 2,
-  },
-  {
-    title: "Recursion",
-    description: "Primitive and reference data types, data structures",
+    description: "Using the 2D Array data structure",
     completed: 0,
     exerciseCount: 2,
   },
@@ -62,7 +62,7 @@ const Java = () => {
       <Content>
         <section className="relative bg-[#130F28] w-[60rem] m-auto rounded-xl mt-[50px]">
           {courses.map((item, i) => (
-            <CourseListComponent key={i} title={`Unit ${i}: ${item.title}`} description={item.description} completed={item.completed} exerciseCount={item.exerciseCount} />
+            <CourseListComponent key={i} title={`Unit ${i+1}: ${item.title}`} description={item.description} completed={item.completed} exerciseCount={item.exerciseCount} />
           ))}
         </section>
       </Content>
