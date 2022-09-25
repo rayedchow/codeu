@@ -30,8 +30,8 @@ const Question = ({ id }: InferGetServerSidePropsType<GetServerSideProps>) => {
 					</div>
 					<div className="mt-6 prose prose-indigo prose-lg mx-auto">
 					<p>
-						{lesson.text.map((value) => {
-							return <span>{ReactHTMLParser(value)}<br /></span>;
+						{lesson.text.map((value, i) => {
+							return <span key={i}>{ReactHTMLParser(value)}<br /></span>;
 						})}
 					</p>
 					{/* <MCQuestion number={1} question={lesson.question} /> */}
@@ -71,7 +71,7 @@ const Question = ({ id }: InferGetServerSidePropsType<GetServerSideProps>) => {
 						</Link>
 					}
 					
-					<p><i>All lessons are from <a href="https://longbaonguyen.github.io/courses/apcsa/apjava.html" target="_blank">https://longbaonguyen.github.io/courses/apcsa/apjava.html</a></i></p>
+					<p><i>All lessons are from <a href="https://longbaonguyen.github.io/courses/apcsa/apjava.html" target="_blank" rel="noreferrer">https://longbaonguyen.github.io/courses/apcsa/apjava.html</a></i></p>
 					</div>
 				</div>
 				</div>
