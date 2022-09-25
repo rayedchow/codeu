@@ -12,7 +12,12 @@ const Navbar = () => {
         <ul className="flex space-x-10">
             <Link href="/courses/java/course-list">
                 <a>
-                    <li>Course List</li>
+                    <li>Lessons</li>
+                </a>
+            </Link>
+            <Link href="/courses/java/exam">
+                <a>
+                    <li>Exam</li>
                 </a>
             </Link>
         </ul>
