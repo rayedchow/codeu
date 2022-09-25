@@ -1,0 +1,28 @@
+[
+	{
+		"unit": "Unit 1: Primitive Types",
+		"text": [
+			"A type is a set of values (e.g. integers, floaters, etc.) and a set of operations (e.g. +, -, *, /, etc.) on them.",
+			"",
+			"Data types can be categorized as either <b>primitive</b> or <b>reference</b>.",
+			"",
+			"The primitive types used in this course define the set of operations for numbers and boolean (true/false) values.",
+			"Examples are <b>int</b>, <b>double</b>, and <b>boolean</b>.",
+			"",
+			"Read more about this at <a>https://longbaonguyen.github.io/courses/apcsa/lecture2.pdf</a>."
+		],
+		"question": {
+			"unit": "Unit 1: Primitive Types",
+			"type": 1,
+			"question": "Which of these methods displays an input to the the computer monitor?",
+			"options": [
+				"System.in.print()",
+				"print()",
+				"System.out.print()",
+				"System.out.input()"
+			],
+			"answer": 2,
+			"explanation": "In java, System.out.print() or System.out.println() are the functions that print out inputs and values to the console/terminal."
+		}
+	}
+]
