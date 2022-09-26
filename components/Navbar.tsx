@@ -9,6 +9,10 @@ const Navbar = () => {
                 <img src="/logo.svg" className="h-[35px]" />
             </a>
         </Link>
+        <div className="absolute w-full flex justify-center items-center flex-col text-[1rem]">
+            <div><a href="https://devpost.com/software/codeu" target="_black">Double-Award <span className="text-[#0284c7]">Hackathon</span> Winner</a></div>
+            <div><a href="https://github.com/voomp/codeu" target="_black">Made using <span className="text-[#0284c7]">Github</span></a></div>
+        </div>
         <ul className="flex space-x-10">
             <Link href="/courses/java/course-list">
                 <a>
